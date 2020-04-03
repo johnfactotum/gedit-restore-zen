@@ -43,7 +43,8 @@ class RestoreZenPlugin(GObject.Object, Gedit.WindowActivatable):
         self.is_fullscreen = False
         self.handlers = [
             self.window.connect('window-state-event', self.on_window_state_event),
-            self.window.connect('tab-added', self.update)
+            self.window.connect('tab-added', self.update),
+            self.window.connect('size-allocate', self.update)
         ]
 
     def do_deactivate(self):

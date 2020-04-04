@@ -59,14 +59,14 @@ class RestoreZenPlugin(GObject.Object, Gedit.WindowActivatable, PeasGtk.Configur
             margin = (window_width - text_width - gutter_width) / 2
             view.set_margin_left(margin)
             if self.get_wrap_right():
-                view.set_margin_right(margin)
+                view.set_right_margin(margin)
             else:
-                view.set_margin_right(0)
+                view.set_right_margin(0)
 
     def uncenter_views(self):
         for view in self.get_views():
             view.set_margin_left(0)
-            view.set_margin_right(0)
+            view.set_right_margin(0)
 
     def on_window_state_event(self, _, event):
         state = event.get_window().get_state()

@@ -12,6 +12,7 @@ After:
 
 * In gedit 3.36, zen mode (centering the view when in fullscreen) is removed
 * This plugin allows you to have zen mode
+* Optional: you can choose to enable wrapping at right margin in preferences
 
 ## Installation
 

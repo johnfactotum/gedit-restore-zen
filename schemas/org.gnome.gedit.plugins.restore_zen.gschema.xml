@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+    <schema id="org.gnome.gedit.plugins.restore_zen">
+        <key name="wrap-right" type="b">
+            <default>false</default>
+            <summary>Wrap at right margin</summary>
+            <description>Whether to wrap the text at the right margin</description>
+        </key>
+    </schema>
+</schemalist>
